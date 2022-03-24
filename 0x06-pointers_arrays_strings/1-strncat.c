@@ -4,6 +4,7 @@
  * _strncat - concatenates n bytes of src with dest
  * @dest: dest string
  * @src: source string
+ * @n: no of bytes of src to be appended
  * Return: concatenated dest string
  */
 char *_strncat(char *dest, char *src, int n)
