@@ -1,0 +1,1 @@
+This is a directory for the structures_typedef tasks
