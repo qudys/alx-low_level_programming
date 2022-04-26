@@ -1,0 +1,1 @@
+This is a directory on singly linked list as a datastructure in c
