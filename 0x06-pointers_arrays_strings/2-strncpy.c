@@ -9,24 +9,21 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, l1;
+	int i, j, k, l, m;
 
-	l1 = strlen(src);
-	if (n > l1)
+	i = strlen(src);
+	k = strlen(dest);
+	if (n > i + 1)
 	{
-		for (i = 0; i < l1; i++)
-		{
-			dest[i] = src[i];
-		}
-		dest[i] = '\0';
-		return (dest);
+		for (j = 0; j <= i; j++)
+			dest[j] = src[j];
+		for (l = j; l < k; l++)
+			dest[l] = '\0';
 	}
 	else
 	{
-		for (i = 0; i < n; i++)
-		{
-			dest[i] = src[i];
-		}
-		return (dest);
+		for (m = 0; m < n; m++)
+			dest[m] = src[m];
 	}
+	return (dest);
 }
